@@ -7,7 +7,7 @@ class MainPageLocators:
 
 class LoginPageLocators:
     LOGIN_FORM_LINK = (By.ID, 'login_form')
-    REGISTER_FORM_LINK = (By.CSS_SELECTOR, 'register_form')
+    REGISTER_FORM_LINK = (By.ID, 'register_form')
 
 
 class ProductPageLocators:
