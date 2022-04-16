@@ -14,7 +14,7 @@ class ProductPageLocators:
     SUCCESS_MESSAGE = (By.XPATH, '//*[@id="messages"]/div[1]/div[1]')
     ADD_TO_BASKET = (By.XPATH, ".//*[@class='btn btn-lg btn-primary btn-add-to-basket']")
     BOOK_PRICE = (By.XPATH, '//*[@id="content_inner"]/article/div[1]/div[2]/p[1]')
-    BOOK_NAME = (By.XPATH, '//*[@id="content_inner"]/article/div[1]/div[2]/h1')
+    BOOK_NAME = (By.XPATH, '//*[@class="col-sm-6 product_main"]/h1')
     BASKET_PRICE = (By.XPATH, '//*[@id="messages"]/div[3]/div/p[1]/strong')
     ADDED_BOOK_NAME = (By.XPATH, '//*[@id="messages"]/div[1]/div/strong')
 

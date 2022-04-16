@@ -31,7 +31,6 @@ class TestGuestAddToBasketFromProductPage:
         page.should_be_disappeared()
 
     @pytest.mark.need_review
-    @pytest.mark.xfail
     @pytest.mark.parametrize('link', ["http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer0"])
     def test_guest_can_add_product_to_basket(self, browser, link):
         page = ProductPage(browser, link)
@@ -58,8 +57,8 @@ class TestGuestAddToBasketFromProductPage:
         page.go_to_login_page()
         page.should_be_login_page()
 
-class TestUserAddToBasketFromProductPage:
 
+class TestUserAddToBasketFromProductPage:
     @pytest.fixture(scope="function", autouse=True)
     def setup(self, browser):
         link = 'http://selenium1py.pythonanywhere.com/'
